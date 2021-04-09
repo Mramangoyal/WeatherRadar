@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Bootstrap CSS CDN-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" /> -->
+
+</head>
+
+<body>
+    <div style="width:100%;min-height:800px;">
+        <div  id="main"  class="container top" style=" padding-top: 15%; max-width: 320px; text-align: center;align-content: center;">
+            <h1>Weather App</h1>
+            <form action="" onsubmit="return false">
+                <input id="cityName" type="text" class="search" placeholder="Search by city name">
+                <button id="showWeather" type="submit" class="btn">Submit</button>
+                <p class="error"></p>
+            </form>
+        </div>
+        <div class="tohide" id="weatherResult"
+            style="margin: 0 auto; padding-bottom: 30px; margin-top: 30px;box-shadow: 0px 0px 9px palevioletred;max-width:320px ;text-align: center">
+            <section>
+                <div class="container">
+                    <div class="icon">
+                        <img src="" alt="" class="weather-icon">
+                    </div>
+                    <div class="location">
+                        <div class="city">CITY</div>
+                        <div class="date">DATE</div>
+                    </div>
+                    <div class="current">
+                        <div class="temp">Temp<span>°C</span></div>
+                        <div class="feelslike">Temp Feelslike<span>°C</span></div>
+                        <div class="weather">Weather</div>
+                        <div class="hummus">Humidity</div>
+                        <div class="currentUvindex" style="background-color: tomato;border-radius: 0.2cm;">
+                            currentUvindex</div>
+                        <div class="temp-range">Temp Range</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="5day" class="current" style="padding-top: 22px; margin-top: 20px;" >
+            <h3>5-Day Forecast:</h3>
+        </div>
+        <div class="tohide" id="forecastResult" style="margin: 0 auto;align-items: center;">
+            <section>
+                <div id="future-weather" class="current" style="margin: 0 auto;">
+                    <div class="row text-light">
+                        <div style="display: inline-block;margin-top: 30px;box-shadow: 0px 0px 9px palevioletred;padding: 22px;">
+                            <p id="fDate0"></p>
+                            <p id="fImg0"></p>
+                            <p>Temp:<span id="fTemp0"></span></p>
+                            <p>Humidity:<span id="fHumidity0"></span></p>
+                        </div>
+                        <div style="display: inline-block; margin-top: 30px;box-shadow: 0px 0px 9px palevioletred;padding: 22px;">
+                            <p id="fDate1"></p>
+                            <p id="fImg1"></p>
+                            <p>Temp:<span id="fTemp1"></span></p>
+                            <p>Humidity:<span id="fHumidity1"></span></p>
+                        </div>
+                        <div style="display: inline-block; margin-top: 30px;box-shadow: 0px 0px 9px palevioletred;padding: 22px;">
+                            <p id="fDate2"></p>
+                            <p id="fImg2"></p>
+                            <p>Temp:<span id="fTemp2"></span></p>
+                            <p>Humidity:<span id="fHumidity2"></span></p>
+                        </div>
+                        <div style="display: inline-block; margin-top: 30px;box-shadow: 0px 0px 9px palevioletred;padding: 22px;">
+                            <p id="fDate3"></p>
+                            <p id="fImg3"></p>
+                            <p>Temp:<span id="fTemp3"></span></p>
+                            <p>Humidity:<span id="fHumidity3"></span></p>
+                        </div>
+                        <div style="display: inline-block; margin-top: 30px;box-shadow: 0px 0px 9px palevioletred;padding: 22px;">
+                            <p id="fDate4"></p>
+                            <p id="fImg4"></p>
+                            <p>Temp:<span id="fTemp4"></span></p>
+                            <p>Humidity:<span id="fHumidity4"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
